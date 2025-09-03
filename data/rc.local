@@ -1,4 +1,3 @@
 #!/bin/bash
 
-/usr/bin/wg-quick up /data/etc/wireguard/wg0.conf
-echo "* * * * * root /data/home/root/wg-reresolve-dns.sh /data/etc/wireguard/wg0.conf > /dev/null 2>&1" > /etc/cron.d/wg-reresolve-dns
+/data/home/root/wg-rc.local.sh &
