@@ -29,6 +29,7 @@ fi
 if [ -f /data/opt/venus-wg/rc.local.sh ]; then
         echo "Modifying rc.local"
         echo "/data/opt/venus-wg/rc.local.sh &" >> /data/rc.local
+        chmod +x /data/rc.local
 else
         echo "/data/opt/venus-wg/rc.local.sh does not exist!"
         echo "Check your installation! Aborting"
